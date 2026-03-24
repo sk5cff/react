@@ -11,25 +11,45 @@ const WorkSpace = () => {
     return (
         <div className='work-space'>
             <div className='header'>
-                <div>
-                    <img src={search} width="35" height="35" alt="" />
-                        <p>Поиск</p>
-                    <img src={plus} width="35" height="35" alt="" />
-                        <p>Добавить</p>
+                    <div className='headerTop'>
                         <div>
-                            <img src={cloud} width="35" height="35" alt="" />
-                                <p>Добавить</p>
-                            <img src={time} width="25" height="25" alt="" />
-                                <p>По дате</p>
-                            <img src={list} width="25" height="25" alt="" />
-                                <p>Списком</p>
+                            <img src={search} width="30" height="30" alt="" />
+                            Поиск
                         </div>
-                </div>
+                        <div>
+                            <img src={plus} width="30" height="30" alt="" />
+                            Добавить
+                        </div>
+                    </div>
+                    <div className='headerBottom'>
+                        <div>
+                            <img src={cloud} width="30" height="30" alt="" />
+                            Все закладки
+                        </div>
+                        <div>
+                            <img src={time} width="23" height="23" alt="" />
+                            По дате
+                        </div>
+                        <div>
+                            <img src={list} width="23" height="23" alt="" />
+                            Списком
+                        </div>
+                        
+                    </div>
             </div>
-            <img src={install} width="20" height="20" alt="" />
-            <p>Установить расширение для браузера</p>
-            <img src={share} width="20" height="20" alt="" />
-            <p>Импортировать закладку</p>
+            <div className="display">
+                <p>Нет закладок</p>
+                <p>Добавьте ссылку или перетащите файл.</p>
+                <button1>
+                    <img src={install} width="20" height="20" alt="" />
+                    Установить расширение для браузера
+                </button1>
+                <button2>
+                    <img src={share} width="20" height="20" alt="" />
+                    Импортировать закладку
+                </button2>
+                
+            </div>
         </div>
     )
 }

@@ -9,16 +9,23 @@ const Sidebar = () => {
     return (
         
         <div className='sidebar'>
-            <img src={profile} width="35" height="35" alt="" />
-            <img src={plus} width="35" height="35" alt="" />
-            <img src={cloud} width="35" height="35" alt="" />
-                <p>Все закладки</p>
-            <img src={not_sorted} width="35" height="35" alt="" />
-                <p>Несортированные</p>
+            <div>
+                <img src={profile} width="30" height="30" alt="" />
+                <img src={plus} width="30" height="30" alt="" />
+            </div>
+            <div>
+                <img src={cloud} width="30" height="30" alt="" />
+                Все закладки
+            </div>
+            <div>
+                <img src={not_sorted} width="30" height="30" alt="" />
+                Несортированные
+            </div>
             <p>Коллекции</p>
-            <img src={folder} width="35" height="35" alt="" />
-                <p>fff</p>
-
+            <div>
+                <img src={folder} width="30" height="30" alt="" />
+                fff
+            </div>
                 <div className='add'> 
                     <p>Бесконечные возможности для организации ваших закладок</p>
                     <p>Перейти на PRO</p>
