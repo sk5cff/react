@@ -11,7 +11,8 @@ const Sidebar = () => {
     return (
         
         <div className={styles.sidebar}>
-            <div>
+            <div className={styles.menu}>
+                <div>
                 <Button title={"sk5_cff"} imgUrl={profile}/>
                 <img src={plus} width="30" height="30" alt="" />
             </div>
@@ -25,10 +26,12 @@ const Sidebar = () => {
             <div>
                 <Button title={"fff"} imgUrl={folder}/>
             </div>
-                <div className={styles.add}> 
-                    <p>Бесконечные возможности для организации ваших закладок</p>
-                    <p>Перейти на PRO</p>
-                </div>
+            </div>
+            
+            <div className={styles.add}> 
+                <p>Бесконечные возможности для организации ваших закладок</p>
+                <p>Перейти на PRO</p>
+            </div>
         </div>
         
 

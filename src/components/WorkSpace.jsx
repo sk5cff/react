@@ -6,8 +6,8 @@ import list from "../assets/list.png"
 import install from "../assets/install.png"
 import share from "../assets/share.png"
 import cloud from "../assets/cloud.png"
-import Button from "../lib/components/button";
-import styles from "./WorkSpace.modules.css"
+import Button from "../lib/components/button"
+import styles from "./WorkSpace.module.css"
 
 const WorkSpace = () => {
     return (
@@ -21,7 +21,7 @@ const WorkSpace = () => {
                             <Button title={"Добавить"} imgUrl={plus}/>
                         </div>
                     </div>
-                    <div className={styles.headerButtom}>
+                    <div className={styles.headerBottom}>
                         <div>
                             <Button title={"Все закладки"} imgUrl={cloud}/>
                         </div>
@@ -31,7 +31,6 @@ const WorkSpace = () => {
                         <div>
                             <Button title={"Списком"} imgUrl={list} type="small"/>
                         </div>
-                        
                     </div>
             </div>
             <div className={styles.display}>
