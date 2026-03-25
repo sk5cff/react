@@ -1,0 +1,14 @@
+
+.sidebar {
+    height: 100%;
+    background-color: rgb(231, 224, 248);
+    border-right: 1px solid rgb(206, 206, 206);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.add {
+    
+    border-top: 1px solid rgb(206, 206, 206);
+}

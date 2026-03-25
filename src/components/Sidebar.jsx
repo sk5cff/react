@@ -4,29 +4,28 @@ import cloud from "../assets/cloud.png"
 import folder from "../assets/folder.png"
 import not_sorted from "../assets/not_sorted.png"
 import plus from "../assets/plus.png"
+import Button from "../lib/components/button";
+import styles from "./Sidebar.module.css"
 
 const Sidebar = () => {
     return (
         
-        <div className='sidebar'>
+        <div className={styles.sidebar}>
             <div>
-                <img src={profile} width="30" height="30" alt="" />
+                <Button title={"sk5_cff"} imgUrl={profile}/>
                 <img src={plus} width="30" height="30" alt="" />
             </div>
             <div>
-                <img src={cloud} width="30" height="30" alt="" />
-                Все закладки
+                <Button title={"Все закладки"} imgUrl={cloud}/>
             </div>
             <div>
-                <img src={not_sorted} width="30" height="30" alt="" />
-                Несортированные
+                <Button title={"Несортированные"} imgUrl={not_sorted}/>
             </div>
             <p>Коллекции</p>
             <div>
-                <img src={folder} width="30" height="30" alt="" />
-                fff
+                <Button title={"fff"} imgUrl={folder}/>
             </div>
-                <div className='add'> 
+                <div className={styles.add}> 
                     <p>Бесконечные возможности для организации ваших закладок</p>
                     <p>Перейти на PRO</p>
                 </div>

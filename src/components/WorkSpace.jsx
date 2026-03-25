@@ -6,48 +6,43 @@ import list from "../assets/list.png"
 import install from "../assets/install.png"
 import share from "../assets/share.png"
 import cloud from "../assets/cloud.png"
+import Button from "../lib/components/button";
+import styles from "./WorkSpace.modules.css"
 
 const WorkSpace = () => {
     return (
-        <div className='work-space'>
-            <div className='header'>
-                    <div className='headerTop'>
+        <div className={styles.workSpace}>
+            <div className={styles.header}>
+                    <div className={styles.headerTop}>
                         <div>
-                            <img src={search} width="30" height="30" alt="" />
-                            Поиск
+                            <Button title={"Поиск"} imgUrl={search}/>
                         </div>
                         <div>
-                            <img src={plus} width="30" height="30" alt="" />
-                            Добавить
+                            <Button title={"Добавить"} imgUrl={plus}/>
                         </div>
                     </div>
-                    <div className='headerBottom'>
+                    <div className={styles.headerButtom}>
                         <div>
-                            <img src={cloud} width="30" height="30" alt="" />
-                            Все закладки
+                            <Button title={"Все закладки"} imgUrl={cloud}/>
                         </div>
                         <div>
-                            <img src={time} width="23" height="23" alt="" />
-                            По дате
+                            <Button title={"По дате"} imgUrl={time} type="small"/>
                         </div>
                         <div>
-                            <img src={list} width="23" height="23" alt="" />
-                            Списком
+                            <Button title={"Списком"} imgUrl={list} type="small"/>
                         </div>
                         
                     </div>
             </div>
-            <div className="display">
-                <p>Нет закладок</p>
+            <div className={styles.display}>
+                <b>Нет закладок</b>
                 <p>Добавьте ссылку или перетащите файл.</p>
-                <button1>
-                    <img src={install} width="20" height="20" alt="" />
-                    Установить расширение для браузера
-                </button1>
-                <button2>
-                    <img src={share} width="20" height="20" alt="" />
-                    Импортировать закладку
-                </button2>
+                <div>
+                    <Button title={"Установить расширение для браузера"} imgUrl={install} type="small"/>
+                </div>
+                <div>
+                    <Button title={"Импортировать закладку"} imgUrl={share} type="small"/>
+                </div>
                 
             </div>
         </div>
