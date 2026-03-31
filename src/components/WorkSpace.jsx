@@ -25,11 +25,13 @@ const WorkSpace = () => {
                         <div>
                             <Button title={"Все закладки"} imgUrl={cloud}/>
                         </div>
-                        <div>
+                        <div className={styles.sort}>
+                            <div>
                             <Button title={"По дате"} imgUrl={time} type="small"/>
                         </div>
                         <div>
                             <Button title={"Списком"} imgUrl={list} type="small"/>
+                        </div>
                         </div>
                     </div>
             </div>

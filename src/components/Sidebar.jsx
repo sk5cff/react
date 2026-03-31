@@ -12,7 +12,7 @@ const Sidebar = () => {
         
         <div className={styles.sidebar}>
             <div className={styles.menu}>
-                <div>
+            <div className={styles.prof}>
                 <Button title={"sk5_cff"} imgUrl={profile}/>
                 <img src={plus} width="30" height="30" alt="" />
             </div>
@@ -22,9 +22,11 @@ const Sidebar = () => {
             <div>
                 <Button title={"Несортированные"} imgUrl={not_sorted}/>
             </div>
-            <p>Коллекции</p>
+            <div className={styles.collection}>
+                <p>Коллекции</p>
             <div>
                 <Button title={"fff"} imgUrl={folder}/>
+            </div>
             </div>
             </div>
             

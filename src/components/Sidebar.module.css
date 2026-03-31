@@ -1,15 +1,26 @@
 .sidebar {
     height: 100%;
-    background-color: rgb(231, 224, 248);
     border-right: 1px solid rgb(206, 206, 206);
     display: flex;
     flex-direction: column;
-    gap: 51%;
+    gap: 70%;
 }
 
 .menu {
-    padding: 10px;
-    gap: 9px;
+    padding: 8px;
+}
+
+.prof {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 10px;
 }
 
 .add {
@@ -17,5 +28,5 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    gap: 3px;
+    gap: 7px;
 }
