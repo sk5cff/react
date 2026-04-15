@@ -1,14 +1,17 @@
 import './App.css'
-import Sidebar from './components/Sidebar'
-import WorkSpace from './components/WorkSpace'
+import {BrowserRouter, Route, Routes} from 'react-router'
+import Profile from './pages/Profile'
+import Home from './pages/Home'
 
 function App() {
 
   return (
-    <div className='global-wrap'>
-      <Sidebar />
-      <WorkSpace />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/profile' element={<Profile />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
